@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/channelape/main/json-schema/channelape-post-v1-inventory-item-quantity-adjustments-response-schema.json",
+  "title": "PostV1InventoryItemQuantityAdjustmentsResponse",
+  "x-generated": "2026-10-08",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/channelape-openapi-generated.yml#/components/schemas/PostV1InventoryItemQuantityAdjustmentsResponse",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "inventory_item_id": {
+      "type": "string"
+    },
+    "location_id": {
+      "type": "string"
+    },
+    "business_id": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "quantity": {
+      "type": "number"
+    },
+    "adjustment_time": {
+      "type": "string"
+    },
+    "memo": {
+      "type": "string"
+    },
+    "operation": {
+      "type": "string"
+    },
+    "creation_time": {
+      "type": "string"
+    },
+    "update_time": {
+      "type": "string"
+    },
+    "external_ids": {
+      "type": "object"
+    },
+    "sub": {
+      "type": "string"
+    }
+  }
+}

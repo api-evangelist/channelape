@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/channelape/main/json-schema/channelape-post-v1-suppliers-supplierid-callbacks-request-schema.json",
+  "title": "PostV1SuppliersSupplieridCallbacksRequest",
+  "x-generated": "2026-10-08",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/channelape-openapi-generated.yml#/components/schemas/PostV1SuppliersSupplieridCallbacksRequest",
+  "type": "object",
+  "properties": {
+    "fulfillmentOptions": {
+      "type": "object",
+      "description": "Options for the fulfillment request, e.g., partialShipments flag."
+    },
+    "orderUpdate": {
+      "type": "object",
+      "description": "Root object containing order identification and fulfillment details."
+    },
+    "orderUpdate.id": {
+      "type": "string",
+      "description": "Order identifier."
+    },
+    "orderUpdate.channelOrderId": {
+      "type": "string",
+      "description": "Channel order identifier."
+    },
+    "orderUpdate.purchaseOrderNumber": {
+      "type": "string",
+      "description": "Purchase order number."
+    },
+    "orderUpdate.fulfillments": {
+      "type": "array",
+      "description": "List of fulfillment objects."
+    },
+    "orderUpdate.fulfillments[].id": {
+      "type": "string",
+      "description": "Fulfillment identifier."
+    },
+    "orderUpdate.fulfillments[].additionalFields": {
+      "type": "array",
+      "description": "Custom name/value pairs, e.g., warehouse_order_id."
+    },
+    "orderUpdate.fulfillments[].additionalFields[].name": {
+      "type": "string",
+      "description": "Name of the additional field."
+    },
+    "orderUpdate.fulfillments[].additionalFields[].value": {
+      "type": "string",
+      "description": "Value of the additional field."
+    },
+    "orderUpdate.fulfillments[].supplierId": {
+      "type": "string",
+      "description": "Supplier identifier."
+    },
+    "orderUpdate.fulfillments[].shippingCompany": {
+      "type": "string",
+      "description": "Shipping company name."
+    },
+    "orderUpdate.fulfillments[].shippingMethod": {
+      "type": "string",
+      "description": "Shipping method."
+    },
+    "orderUpdate.fulfillments[].trackingNumber": {
+      "type": "string",
+      "description": "Tracking number."
+    },
+    "orderUpdate.fulfillments[].trackingUrls": {
+      "type": "array",
+      "description": "Array of tracking URL strings."
+    },
+    "orderUpdate.fulfillments[].shippedAt": {
+      "type": "string",
+      "description": "Timestamp of shipment (ISO 8601)."
+    },
+    "orderUpdate.fulfillments[].locationId": {
+      "type": "string",
+      "description": "Location identifier that must exist in the WAREHOUSE_LOCATION_MAP."
+    },
+    "orderUpdate.fulfillments[].status": {
+      "type": "string",
+      "description": "Fulfillment status (e.g., OPEN, SUCCESS, CANCELED, PENDING, NEW, BACKORDER)."
+    },
+    "orderUpdate.fulfillments[].lineItems": {
+      "type": "array",
+      "description": "List of line item objects."
+    },
+    "orderUpdate.fulfillments[].lineItems[].id": {
+      "type": "string",
+      "description": "Line item identifier."
+    },
+    "orderUpdate.fulfillments[].lineItems[].sku": {
+      "type": "string",
+      "description": "SKU of the line item."
+    },
+    "orderUpdate.fulfillments[].lineItems[].title": {
+      "type": "string",
+      "description": "Title of the line item."
+    },
+    "orderUpdate.fulfillments[].lineItems[].additionalFields": {
+      "type": "array",
+      "description": "Custom fields for the line item."
+    },
+    "orderUpdate.fulfillments[].lineItems[].grams": {
+      "type": "integer",
+      "description": "Weight in grams."
+    },
+    "orderUpdate.fulfillments[].lineItems[].price": {
+      "type": "integer",
+      "description": "Price amount."
+    },
+    "orderUpdate.fulfillments[].lineItems[].shippingPrice": {
+      "type": "integer",
+      "description": "Shipping price amount."
+    },
+    "orderUpdate.fulfillments[].lineItems[].shippingTax": {
+      "type": "integer",
+      "description": "Shipping tax amount."
+    },
+    "orderUpdate.fulfillments[].lineItems[].quantity": {
+      "type": "integer",
+      "description": "Quantity of the line item."
+    },
+    "orderUpdate.fulfillments[].lineItems[].shippingMethod": {
+      "type": "string",
+      "description": "Shipping method for the line item."
+    },
+    "orderUpdate.fulfillments[].lineItems[].vendor": {
+      "type": "string",
+      "description": "Vendor name."
+    }
+  },
+  "required": [
+    "orderUpdate",
+    "orderUpdate.fulfillments",
+    "orderUpdate.fulfillments[].additionalFields[].name",
+    "orderUpdate.fulfillments[].additionalFields[].value",
+    "orderUpdate.fulfillments[].locationId",
+    "orderUpdate.fulfillments[].status",
+    "orderUpdate.fulfillments[].lineItems",
+    "orderUpdate.fulfillments[].lineItems[].quantity"
+  ]
+}

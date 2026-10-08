@@ -1,0 +1,18 @@
+generated: '2026-10-08'
+method: probed
+source: "https://www.channelape.com/privacy"
+signals:
+  data_subject_request:
+    evidence:
+      - source: "https://www.channelape.com/privacy"
+        http_status: 200
+        fetched: "true"
+        quote: "We will respond to your request to access or delete your information within 30 days."
+    note: "Provides a process for data access and deletion requests with a 30‑day response time."
+  data_retention:
+    evidence:
+      - source: "https://www.channelape.com/privacy"
+        http_status: 200
+        fetched: "true"
+        quote: "We will retain your personal information for as long as your Product account is active or as needed to provide you with the ChannelApe Service or as otherwise necessary to fulfill the purposes outlined in this Privacy Policy or comply with our legal obligations, resolve disputes, and enforce our agreements."
+    note: "Describes retention period tied to account activity and legal obligations."

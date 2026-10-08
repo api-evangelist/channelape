@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/channelape/main/json-schema/channelape-post0-b2-d6-f2-b467640-b495882-a4-c93-f6-b250-request-schema.json",
+  "title": "Post0B2D6F2B467640B495882A4C93F6B250Request",
+  "x-generated": "2026-10-08",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/channelape-openapi-generated.yml#/components/schemas/Post0B2D6F2B467640B495882A4C93F6B250Request",
+  "type": "object",
+  "properties": {
+    "additionalFields": {
+      "type": "object",
+      "description": "Order level additional fields."
+    },
+    "customer": {
+      "type": "object",
+      "description": "Customer information."
+    },
+    "lineItems": {
+      "type": "array",
+      "description": "Array of line item objects."
+    },
+    "locationId": {
+      "type": "string"
+    },
+    "purchasedAt": {
+      "type": "string",
+      "description": "ISO timestamp of purchase."
+    },
+    "purchaseOrderNumber": {
+      "type": "string"
+    },
+    "shippingCompany": {
+      "type": "string"
+    },
+    "shippingMethod": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "description": "Order fulfillment status (e.g., NEW)."
+    },
+    "warehouseOrderId": {
+      "type": "string"
+    },
+    "warehouseCode": {
+      "type": "string"
+    },
+    "warehouseCompany": {
+      "type": "string"
+    },
+    "warehouseName": {
+      "type": "string"
+    },
+    "warehouseId": {
+      "type": "string"
+    },
+    "warehouseZipcode": {
+      "type": "string"
+    },
+    "channelOrderId": {
+      "type": "string"
+    },
+    "channelId": {
+      "type": "string"
+    },
+    "orderId": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "additionalFields",
+    "customer",
+    "lineItems",
+    "locationId",
+    "purchasedAt",
+    "purchaseOrderNumber",
+    "shippingCompany",
+    "shippingMethod",
+    "status",
+    "warehouseOrderId",
+    "warehouseCode",
+    "warehouseCompany",
+    "warehouseName",
+    "warehouseId",
+    "warehouseZipcode",
+    "channelOrderId",
+    "channelId",
+    "orderId"
+  ]
+}

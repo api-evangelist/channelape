@@ -1,0 +1,139 @@
+generated: '2026-10-08'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 9
+  own: 4
+  other_domain: 4
+  platform: 1
+  roles:
+  - api
+  - other
+  - portal
+  - source
+  - status
+  - website
+hosts:
+- host: api.channelape.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: channelape.com
+  role: api
+  relation: own
+- host: api.channelape.io
+  found_by:
+  - apis[]
+  types: []
+  serves:
+  - api
+  registrable_domain: channelape.io
+  role: api
+  relation: other-domain
+- host: api.statuspage.io
+  found_by:
+  - probed
+  - site-links
+  - namespace-probe
+  - well-known
+  types: []
+  serves: []
+  title: Real-Time Incident Communication with Statuspage | Atlassian | Atlassian
+  status: 200
+  registrable_domain: statuspage.io
+  role: api
+  relation: other-domain
+- host: apis.statuspage.io
+  found_by:
+  - probed
+  - site-links
+  - namespace-probe
+  - well-known
+  types: []
+  serves: []
+  title: apis Status
+  status: 200
+  registrable_domain: statuspage.io
+  role: api
+  relation: other-domain
+- host: channelape.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: channelape.com
+  role: other
+  relation: own
+- host: channelape.statuspage.io
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - StatusPage
+  serves:
+  - status-page
+  vendor: statuspage
+  registrable_domain: statuspage.io
+  role: status
+  relation: other-domain
+- host: dev.channelape.com
+  found_by:
+  - pointer
+  - apis[]
+  - probed
+  - site-links
+  - docs-index
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - DeveloperPortal
+  - Documentation
+  - APIReference
+  - GettingStarted
+  serves:
+  - docs
+  - cdn
+  - documentation
+  - hosting
+  vendor: fastly
+  registrable_domain: channelape.com
+  role: portal
+  relation: own
+- host: github.com
+  found_by:
+  - pointer
+  types:
+  - GitHubOrganization
+  serves: []
+  registrable_domain: github.com
+  role: source
+  relation: platform
+- host: www.channelape.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  - Support
+  - Blog
+  - PrivacyPolicy
+  - TermsOfService
+  serves:
+  - cdn
+  - hosting
+  vendor: cloudflare
+  registrable_domain: channelape.com
+  role: website
+  relation: own

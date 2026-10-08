@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/channelape/main/json-schema/channelape-post6-f7402-b4-e75-c4573-b3-b43139-dc1-b733-drequest-schema.json",
+  "title": "Post6F7402B4E75C4573B3B43139Dc1B733DRequest",
+  "x-generated": "2026-10-08",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/channelape-openapi-generated.yml#/components/schemas/Post6F7402B4E75C4573B3B43139Dc1B733DRequest",
+  "type": "object",
+  "properties": {
+    "additionalFields": {
+      "type": "object"
+    },
+    "customer": {
+      "type": "object"
+    },
+    "lineItems": {
+      "type": "array"
+    },
+    "locationId": {
+      "type": "string"
+    },
+    "purchasedAt": {
+      "type": "string"
+    },
+    "purchaseOrderNumber": {
+      "type": "string"
+    },
+    "shippingCompany": {
+      "type": "string"
+    },
+    "shippingMethod": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "warehouseOrderId": {
+      "type": "string"
+    },
+    "warehouseCode": {
+      "type": "string"
+    },
+    "warehouseCompany": {
+      "type": "string"
+    },
+    "warehouseName": {
+      "type": "string"
+    },
+    "warehouseId": {
+      "type": "string"
+    },
+    "warehouseZipcode": {
+      "type": "string"
+    },
+    "channelOrderId": {
+      "type": "string"
+    },
+    "channelId": {
+      "type": "string"
+    },
+    "orderId": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "additionalFields",
+    "customer",
+    "lineItems",
+    "locationId",
+    "purchasedAt",
+    "purchaseOrderNumber",
+    "shippingCompany",
+    "shippingMethod",
+    "status",
+    "warehouseOrderId",
+    "warehouseCode",
+    "warehouseCompany",
+    "warehouseName",
+    "warehouseId",
+    "warehouseZipcode",
+    "channelOrderId",
+    "channelId",
+    "orderId"
+  ]
+}

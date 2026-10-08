@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/channelape/main/json-schema/channelape-get-v1-v1-id-response-schema.json",
+  "title": "GetV1V1IdResponse",
+  "x-generated": "2026-10-08",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/channelape-openapi-generated.yml#/components/schemas/GetV1V1IdResponse",
+  "type": "object",
+  "properties": {
+    "business_id": {
+      "type": "string"
+    },
+    "inventory_item_id": {
+      "type": "string"
+    },
+    "location_id": {
+      "type": "string"
+    },
+    "available_to_sell": {
+      "type": "number"
+    },
+    "committed": {
+      "type": "number"
+    },
+    "on_hand": {
+      "type": "number"
+    },
+    "on_hold": {
+      "type": "number"
+    },
+    "on_order": {
+      "type": "number"
+    },
+    "reserve": {
+      "type": "number"
+    },
+    "incoming": {
+      "type": "number"
+    },
+    "unavailable": {
+      "type": "number"
+    },
+    "available_to_promise": {
+      "type": "number"
+    },
+    "sku": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "location_legacy_id": {
+      "type": "string"
+    },
+    "inventory_item_legacy_id": {
+      "type": "string"
+    }
+  }
+}

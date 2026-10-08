@@ -1,23 +1,135 @@
 aid: channelape
+
 name: ChannelApe
-description: 'ChannelApe is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.channelape.com/hubfs/side-img-3_3-1.png
+
+description: ChannelApe provides an inventory intelligence platform that helps operations teams manage wholesale, brick‑and‑mortar, dropship,
+  and pre‑sale order workflows. The solution offers real‑time inventory visibility across multiple locations, automated fulfillment rules, and
+  detailed analytics, eliminating spreadsheets and manual processes. It supports integrations via APIs for order management, inventory tracking,
+  and partner coordination, enabling retailers and brands to scale efficiently.
+
 url: https://raw.githubusercontent.com/api-evangelist/channelape/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-08 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-08'
+
 modified: '2026-10-08'
+
 tags:
-- Company
-apis: []
+- Inventory
+- Operations
+- Wholesale
+- Retail
+- API
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Spectral
+  url: rules/channelape-rules.yml
+- type: JSONLD
+  url: json-ld/channelape-context.jsonld
+- type: Vocabulary
+  url: vocabulary/channelape-vocabulary.yml
+- type: DataModel
+  url: data-model/channelape-data-model.yml
+- type: Conformance
+  url: conformance/channelape-conformance.yml
+- type: SecurityTxt
+  url: well-known/channelape-channelape-security.txt
+- type: SecurityTxt
+  url: well-known/channelape-apis-security.txt
+- type: SecurityTxt
+  url: well-known/channelape-api-security.txt
+- type: WellKnown
+  url: well-known/channelape-well-known.yml
+- type: Hosts
+  url: hosts/channelape-hosts.yml
+- type: Vendors
+  url: vendors/channelape-vendors.yml
+- type: SDKs
+  url: packages/channelape-packages.yml
+- type: Packages
+  url: packages/channelape-packages.yml
+- type: GitHubOrganization
+  url: https://github.com/ChannelApe
+- type: DomainSecurity
+  url: security/channelape-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.channelape.com
+- type: DeveloperPortal
+  url: https://dev.channelape.com
+- type: Documentation
+  url: https://dev.channelape.com/docs/intro
+- type: APIReference
+  url: https://dev.channelape.com/api
+- type: GettingStarted
+  url: https://dev.channelape.com/docs/intro
+- type: Support
+  url: https://www.channelape.com/support-landing
+- type: Blog
+  url: https://www.channelape.com/blog
+- type: PrivacyPolicy
+  url: https://www.channelape.com/privacy
+- type: TermsOfService
+  url: https://www.channelape.com/terms
+- type: StatusPage
+  url: https://channelape.statuspage.io
+
+apis:
+- name: ChannelApe API
+  description: API for ChannelApe inventory intelligence platform
+  humanURL: https://dev.channelape.com/docs/intro
+  baseURL: null
+  aid: channelape:channelape-api-2
+- aid: channelape:channelape-api
+  name: ChannelApe API
+  description: 'ChannelApe API as documented publicly: 8 operations. Contract generated from the documentation by API Evangelist (2026-10-08);
+
+    not the provider''s own document.'
+  humanURL: https://dev.channelape.com/docs/inventory/inventory-api
+  baseURL: https://api.channelape.io
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/channelape-openapi-generated.yml
+    x-provenance: generated
+  - type: JSONSchema
+    url: json-schema/channelape-post-v1-suppliers-supplierid-callbacks-request-schema.json
+  - type: JSONSchema
+    url: json-schema/channelape-post0-b2-d6-f2-b467640-b495882-a4-c93-f6-b250-request-schema.json
+  - type: JSONSchema
+    url: json-schema/channelape-post6-f7402-b4-e75-c4573-b3-b43139-dc1-b733-drequest-schema.json
+  - type: JSONSchema
+    url: json-schema/channelape-get-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/channelape-post-v1-suppliers-supplierid-callbacks-response-schema.json
+  - type: JSONSchema
+    url: json-schema/channelape-post-v1-inventory-item-quantity-adjustments-response-schema.json
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: Developer portal provides API reference pages but no OpenAPI or other machine‑readable contract was found.
+  evidence:
+  - url: https://dev.channelape.com/api
+    status: 200
+  checked: '2026-10-08'
+x-enrichment:
+  date: '2026-10-08'
+  status: enriched
+  artifacts_added: 23
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

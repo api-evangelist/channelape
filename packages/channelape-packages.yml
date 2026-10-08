@@ -1,0 +1,61 @@
+generated: '2026-10-08'
+method: probed
+generator: harvest-packages.py
+source: registry metadata endpoints (registry.npmjs.org, pypi.org, rubygems.org, api.nuget.org, packagist.org, crates.io) ; github.com/ChannelApe
+ownership_rule: 'official: true only when the registry metadata (homepage, repository, author, URLs) names the provider''s domain (channelape.com,
+  security/channelape-domain-security.yml, statuspage.io) or its accepted GitHub org (ChannelApe).'
+packages:
+- name: shopify-sdk
+  registry: github
+  url: https://github.com/ChannelApe/shopify-sdk
+  language: Java
+  official: true
+  version: null
+  published: '2024-10-18'
+  source_repo: https://github.com/ChannelApe/shopify-sdk
+  evidence: repository in github.com/ChannelApe, whose profile names the provider's domain
+- name: channelape-typescript-sdk
+  registry: github
+  url: https://github.com/ChannelApe/channelape-typescript-sdk
+  language: TypeScript
+  official: true
+  version: null
+  published: '2024-05-17'
+  source_repo: https://github.com/ChannelApe/channelape-typescript-sdk
+  evidence: repository in github.com/ChannelApe, whose profile names the provider's domain
+- name: channelape-typescript-web-service-sdk
+  registry: github
+  url: https://github.com/ChannelApe/channelape-typescript-web-service-sdk
+  language: TypeScript
+  official: true
+  version: null
+  published: '2022-12-08'
+  source_repo: https://github.com/ChannelApe/channelape-typescript-web-service-sdk
+  evidence: repository in github.com/ChannelApe, whose profile names the provider's domain
+- name: channelape-typescript-consumer-service-sdk
+  registry: github
+  url: https://github.com/ChannelApe/channelape-typescript-consumer-service-sdk
+  language: TypeScript
+  official: true
+  version: null
+  published: '2021-11-16'
+  source_repo: https://github.com/ChannelApe/channelape-typescript-consumer-service-sdk
+  evidence: repository in github.com/ChannelApe, whose profile names the provider's domain
+- name: tdd-solutions-java
+  registry: github
+  url: https://github.com/ChannelApe/tdd-solutions-java
+  language: Java
+  official: true
+  version: null
+  published: '2018-12-07'
+  source_repo: https://github.com/ChannelApe/tdd-solutions-java
+  evidence: repository in github.com/ChannelApe, whose profile names the provider's domain
+- name: bigcommerce-sdk
+  registry: github
+  url: https://github.com/ChannelApe/bigcommerce-sdk
+  language: Java
+  official: true
+  version: null
+  published: '2018-11-06'
+  source_repo: https://github.com/ChannelApe/bigcommerce-sdk
+  evidence: repository in github.com/ChannelApe, whose profile names the provider's domain

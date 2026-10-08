@@ -1,0 +1,262 @@
+{
+  "@context": {
+    "@vocab": "https://channelape.com/schema#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "channelape": "https://channelape.com/schema#",
+    "Post0B2D6F2B467640B495882A4C93F6B250Request": "channelape:Post0B2D6F2B467640B495882A4C93F6B250Request",
+    "additionalFields": {
+      "@id": "channelape:additionalFields"
+    },
+    "customer": {
+      "@id": "channelape:customer"
+    },
+    "lineItems": {
+      "@id": "channelape:lineItems",
+      "@container": "@list"
+    },
+    "locationId": {
+      "@id": "channelape:locationId",
+      "@type": "xsd:string"
+    },
+    "purchasedAt": {
+      "@id": "channelape:purchasedAt",
+      "@type": "xsd:string"
+    },
+    "purchaseOrderNumber": {
+      "@id": "channelape:purchaseOrderNumber",
+      "@type": "xsd:string"
+    },
+    "shippingCompany": {
+      "@id": "channelape:shippingCompany",
+      "@type": "xsd:string"
+    },
+    "shippingMethod": {
+      "@id": "channelape:shippingMethod",
+      "@type": "xsd:string"
+    },
+    "status": {
+      "@id": "channelape:status",
+      "@type": "xsd:string"
+    },
+    "warehouseOrderId": {
+      "@id": "channelape:warehouseOrderId",
+      "@type": "xsd:string"
+    },
+    "warehouseCode": {
+      "@id": "channelape:warehouseCode",
+      "@type": "xsd:string"
+    },
+    "warehouseCompany": {
+      "@id": "channelape:warehouseCompany",
+      "@type": "xsd:string"
+    },
+    "warehouseName": {
+      "@id": "channelape:warehouseName",
+      "@type": "xsd:string"
+    },
+    "warehouseId": {
+      "@id": "channelape:warehouseId",
+      "@type": "xsd:string"
+    },
+    "warehouseZipcode": {
+      "@id": "channelape:warehouseZipcode",
+      "@type": "xsd:string"
+    },
+    "channelOrderId": {
+      "@id": "channelape:channelOrderId",
+      "@type": "xsd:string"
+    },
+    "channelId": {
+      "@id": "channelape:channelId",
+      "@type": "xsd:string"
+    },
+    "orderId": {
+      "@id": "channelape:orderId",
+      "@type": "xsd:string"
+    },
+    "Post0B2D6F2B467640B495882A4C93F6B250Response": "channelape:Post0B2D6F2B467640B495882A4C93F6B250Response",
+    "body": {
+      "@id": "channelape:body",
+      "@type": "xsd:string"
+    },
+    "Post6F7402B4E75C4573B3B43139Dc1B733DRequest": "channelape:Post6F7402B4E75C4573B3B43139Dc1B733DRequest",
+    "Post6F7402B4E75C4573B3B43139Dc1B733DResponse": "channelape:Post6F7402B4E75C4573B3B43139Dc1B733DResponse",
+    "PostRestV1RpcRpcidRequest": "channelape:PostRestV1RpcRpcidRequest",
+    "business_id": {
+      "@id": "channelape:business_id",
+      "@type": "xsd:string"
+    },
+    "name": {
+      "@id": "channelape:name",
+      "@type": "xsd:string"
+    },
+    "PostRestV1V1IdRequest": "channelape:PostRestV1V1IdRequest",
+    "webhook_configuration_id": {
+      "@id": "channelape:webhook_configuration_id",
+      "@type": "xsd:string"
+    },
+    "action": {
+      "@id": "channelape:action",
+      "@type": "xsd:string"
+    },
+    "capture_snapshot": {
+      "@id": "channelape:capture_snapshot",
+      "@type": "xsd:boolean"
+    },
+    "PostV1InventoryItemQuantityAdjustmentsRequest": "channelape:PostV1InventoryItemQuantityAdjustmentsRequest",
+    "quantity": {
+      "@id": "channelape:quantity",
+      "@type": "xsd:string"
+    },
+    "inventory_item_id": {
+      "@id": "channelape:inventory_item_id",
+      "@type": "xsd:string"
+    },
+    "location_id": {
+      "@id": "channelape:location_id",
+      "@type": "xsd:string"
+    },
+    "operation": {
+      "@id": "channelape:operation",
+      "@type": "xsd:string"
+    },
+    "memo": {
+      "@id": "channelape:memo",
+      "@type": "xsd:string"
+    },
+    "external_ids": {
+      "@id": "channelape:external_ids",
+      "@type": "xsd:string"
+    },
+    "PostV1InventoryItemQuantityAdjustmentsResponse": "channelape:PostV1InventoryItemQuantityAdjustmentsResponse",
+    "id": {
+      "@id": "channelape:id",
+      "@type": "xsd:string"
+    },
+    "adjustment_time": {
+      "@id": "channelape:adjustment_time",
+      "@type": "xsd:string"
+    },
+    "creation_time": {
+      "@id": "channelape:creation_time",
+      "@type": "xsd:string"
+    },
+    "update_time": {
+      "@id": "channelape:update_time",
+      "@type": "xsd:string"
+    },
+    "sub": {
+      "@id": "channelape:sub",
+      "@type": "xsd:string"
+    },
+    "PostV1SuppliersSupplieridCallbacksRequest": "channelape:PostV1SuppliersSupplieridCallbacksRequest",
+    "fulfillmentOptions": {
+      "@id": "channelape:fulfillmentOptions"
+    },
+    "orderUpdate": {
+      "@id": "channelape:orderUpdate"
+    },
+    "orderUpdate.id": {
+      "@id": "channelape:orderUpdate.id",
+      "@type": "xsd:string"
+    },
+    "orderUpdate.channelOrderId": {
+      "@id": "channelape:orderUpdate.channelOrderId",
+      "@type": "xsd:string"
+    },
+    "orderUpdate.purchaseOrderNumber": {
+      "@id": "channelape:orderUpdate.purchaseOrderNumber",
+      "@type": "xsd:string"
+    },
+    "orderUpdate.fulfillments": {
+      "@id": "channelape:orderUpdate.fulfillments",
+      "@container": "@list"
+    },
+    "PostV1SuppliersSupplieridCallbacksResponse": "channelape:PostV1SuppliersSupplieridCallbacksResponse",
+    "updateResult": {
+      "@id": "channelape:updateResult"
+    },
+    "updateResult.inventoryAdjustmentCount": {
+      "@id": "channelape:updateResult.inventoryAdjustmentCount",
+      "@type": "xsd:integer"
+    },
+    "updateResult.inventorySetCount": {
+      "@id": "channelape:updateResult.inventorySetCount",
+      "@type": "xsd:integer"
+    },
+    "updateResult.orderActivityCount": {
+      "@id": "channelape:updateResult.orderActivityCount",
+      "@type": "xsd:integer"
+    },
+    "updateResult.orderUpdateCount": {
+      "@id": "channelape:updateResult.orderUpdateCount",
+      "@type": "xsd:integer"
+    },
+    "GetV1V1IdResponse": "channelape:GetV1V1IdResponse",
+    "available_to_sell": {
+      "@id": "channelape:available_to_sell",
+      "@type": "xsd:decimal"
+    },
+    "committed": {
+      "@id": "channelape:committed",
+      "@type": "xsd:decimal"
+    },
+    "on_hand": {
+      "@id": "channelape:on_hand",
+      "@type": "xsd:decimal"
+    },
+    "on_hold": {
+      "@id": "channelape:on_hold",
+      "@type": "xsd:decimal"
+    },
+    "on_order": {
+      "@id": "channelape:on_order",
+      "@type": "xsd:decimal"
+    },
+    "reserve": {
+      "@id": "channelape:reserve",
+      "@type": "xsd:decimal"
+    },
+    "incoming": {
+      "@id": "channelape:incoming",
+      "@type": "xsd:decimal"
+    },
+    "unavailable": {
+      "@id": "channelape:unavailable",
+      "@type": "xsd:decimal"
+    },
+    "available_to_promise": {
+      "@id": "channelape:available_to_promise",
+      "@type": "xsd:decimal"
+    },
+    "sku": {
+      "@id": "channelape:sku",
+      "@type": "xsd:string"
+    },
+    "title": {
+      "@id": "channelape:title",
+      "@type": "xsd:string"
+    },
+    "location": {
+      "@id": "channelape:location",
+      "@type": "xsd:string"
+    },
+    "location_legacy_id": {
+      "@id": "channelape:location_legacy_id",
+      "@type": "xsd:string"
+    },
+    "inventory_item_legacy_id": {
+      "@id": "channelape:inventory_item_legacy_id",
+      "@type": "xsd:string"
+    }
+  },
+  "@type": "schema:Dataset",
+  "schema:name": "ChannelApe API JSON-LD context",
+  "schema:description": "A JSON-LD @context for the objects ChannelApe's own API contract declares: one class per component schema, one property per declared field, typed from the contract. Derived by script (derive-json-ld.py, 2026-10-08) from openapi/_ae-authored/channelape-openapi-generated.yml.",
+  "dcterms:created": "2026-10-08",
+  "dcterms:source": [
+    "openapi/_ae-authored/channelape-openapi-generated.yml"
+  ]
+}
