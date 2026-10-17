@@ -1,0 +1,134 @@
+openapi: 3.2.0
+info:
+  title: ChannelApe Rest API
+  version: '2026-10-08'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-08: 8 operation(s) read from 8 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; ChannelApe has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 7
+    documentation: 1
+    pages-with-code: 2
+    pages-read: 8
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-08'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://dev.channelape.com/docs/inventory/inventory-api
+  - https://dev.channelape.com/docs/api-usage
+  - https://dev.channelape.com/docs/playbook-webhook-process-cancellations
+  - https://dev.channelape.com/docs/playbook-webhook-ship-confirmations-step
+  - https://dev.channelape.com/docs/playbook-webhook-fulfillment-order-rejections
+  - https://dev.channelape.com/docs/upserts-overview
+  - https://dev.channelape.com/docs/webhooks-configuration
+  - https://dev.channelape.com/docs/playbook-webhook-send-orders-step
+servers:
+- url: https://api.channelape.io
+security:
+- apiKey: []
+tags:
+- name: Rest
+paths:
+  /rest/v1/rpc/{rpcid}:
+    post:
+      operationId: post_rest_v1_rpc_rpcid
+      tags:
+      - Rest
+      summary: POST /rest/v1/rpc/create_api_account
+      x-source: https://dev.channelape.com/docs/api-usage
+      parameters:
+      - name: rpcid
+        in: path
+        required: true
+        schema:
+          type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostRestV1RpcRpcidRequest'
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl 'https://api.channelape.io/rest/v1/rpc/create_api_account' \\ -d '{ \"business_id\": \"c8c6bcfa-f544-4680-bbf3-7d93aee95efa\", \"name\": \"My API Account\" }' \\ -H \"apikey: ANON_KEY\" \\ -H \"Content-Type: application/vnd.pgrst.object+json\" \\ -H \"Authorization: Bearer YOUR_KEY\" \n This will create your API account private key. Note, that this is only shown once, so ensure you save it.\nOnce you have your A"
+        collapsed_from: 4 example path(s) differing only at rpcId
+  /rest/v1/{v1id}:
+    get:
+      operationId: get_rest_v1_v1id
+      tags:
+      - Rest
+      summary: GET /rest/v1/webhook_actions
+      x-source: https://dev.channelape.com/docs/api-usage
+      parameters:
+      - name: v1id
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: business_id
+        in: query
+        required: false
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl 'https://api.channelape.io/rest/v1/webhook_actions' \\ -H \"apikey: ANON_KEY\" \\ -H \"Authorization: Bearer YOUR_KEY\" \n Creating an API Account ​ \n You can create an API account to access your businesses resources across ChannelApe API's. To do this, you need be the owner of the business. Run the following command: "
+        collapsed_from: 2 example path(s) differing only at v1Id
+    post:
+      operationId: post_rest_v1_v1id
+      tags:
+      - Rest
+      summary: POST /rest/v1/webhook_configuration_actions
+      x-source: https://dev.channelape.com/docs/webhooks-configuration
+      parameters:
+      - name: v1id
+        in: path
+        required: true
+        schema:
+          type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostRestV1V1IdRequest'
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl -X POST 'https://api.channelape.io/rest/v1/webhook_configuration_actions' \\ -H 'Content-Type: application/json' \\ -H \"apikey: ANON_KEY\" \\ -H \"Authorization: Bearer YOUR_KEY\" \\ -d '{ \"webhook_configuration_id\" : \"bdd307a8-8488-4f37-a5c2-da04e3d0d736\", \"action\" : \"shipment.updated.status\", \"capture_snapshot\": false }' \n Capture Snapshots ​ \n Initially when webhooks launched, we captured the ent"
+        collapsed_from: 2 example path(s) differing only at v1Id
+components:
+  schemas:
+    PostRestV1RpcRpcidRequest:
+      type: object
+      properties:
+        business_id:
+          type: string
+        name:
+          type: string
+    PostRestV1V1IdRequest:
+      type: object
+      properties:
+        webhook_configuration_id:
+          type: string
+        action:
+          type: string
+        capture_snapshot:
+          type: boolean
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: apikey

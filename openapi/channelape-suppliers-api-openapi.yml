@@ -1,0 +1,188 @@
+openapi: 3.2.0
+info:
+  title: ChannelApe Suppliers API
+  version: '2026-10-08'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-08: 8 operation(s) read from 8 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; ChannelApe has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 7
+    documentation: 1
+    pages-with-code: 2
+    pages-read: 8
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-08'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://dev.channelape.com/docs/inventory/inventory-api
+  - https://dev.channelape.com/docs/api-usage
+  - https://dev.channelape.com/docs/playbook-webhook-process-cancellations
+  - https://dev.channelape.com/docs/playbook-webhook-ship-confirmations-step
+  - https://dev.channelape.com/docs/playbook-webhook-fulfillment-order-rejections
+  - https://dev.channelape.com/docs/upserts-overview
+  - https://dev.channelape.com/docs/webhooks-configuration
+  - https://dev.channelape.com/docs/playbook-webhook-send-orders-step
+servers:
+- url: https://api.channelape.io
+security:
+- apiKey: []
+tags:
+- name: Suppliers
+paths:
+  /v1/suppliers/{supplierid}/callbacks:
+    post:
+      operationId: post_v1_suppliers_supplierid_callbacks
+      tags:
+      - Suppliers
+      summary: Receive Fulfillment Order Receipts
+      x-source: https://dev.channelape.com/docs/playbook-webhook-ship-confirmations-step
+      parameters:
+      - name: supplierid
+        in: path
+        required: true
+        schema:
+          type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostV1SuppliersSupplieridCallbacksRequest'
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostV1SuppliersSupplieridCallbacksResponse'
+      x-evidence:
+        kind: documentation
+        collapsed_from: 2 example path(s) differing only at supplierId
+components:
+  schemas:
+    PostV1SuppliersSupplieridCallbacksRequest:
+      type: object
+      properties:
+        fulfillmentOptions:
+          type: object
+          description: Options for the fulfillment request, e.g., partialShipments flag.
+        orderUpdate:
+          type: object
+          description: Root object containing order identification and fulfillment details.
+        orderUpdate.id:
+          type: string
+          description: Order identifier.
+        orderUpdate.channelOrderId:
+          type: string
+          description: Channel order identifier.
+        orderUpdate.purchaseOrderNumber:
+          type: string
+          description: Purchase order number.
+        orderUpdate.fulfillments:
+          type: array
+          description: List of fulfillment objects.
+        orderUpdate.fulfillments[].id:
+          type: string
+          description: Fulfillment identifier.
+        orderUpdate.fulfillments[].additionalFields:
+          type: array
+          description: Custom name/value pairs, e.g., warehouse_order_id.
+        orderUpdate.fulfillments[].additionalFields[].name:
+          type: string
+          description: Name of the additional field.
+        orderUpdate.fulfillments[].additionalFields[].value:
+          type: string
+          description: Value of the additional field.
+        orderUpdate.fulfillments[].supplierId:
+          type: string
+          description: Supplier identifier.
+        orderUpdate.fulfillments[].shippingCompany:
+          type: string
+          description: Shipping company name.
+        orderUpdate.fulfillments[].shippingMethod:
+          type: string
+          description: Shipping method.
+        orderUpdate.fulfillments[].trackingNumber:
+          type: string
+          description: Tracking number.
+        orderUpdate.fulfillments[].trackingUrls:
+          type: array
+          description: Array of tracking URL strings.
+        orderUpdate.fulfillments[].shippedAt:
+          type: string
+          description: Timestamp of shipment (ISO 8601).
+        orderUpdate.fulfillments[].locationId:
+          type: string
+          description: Location identifier that must exist in the WAREHOUSE_LOCATION_MAP.
+        orderUpdate.fulfillments[].status:
+          type: string
+          description: Fulfillment status (e.g., OPEN, SUCCESS, CANCELED, PENDING, NEW, BACKORDER).
+        orderUpdate.fulfillments[].lineItems:
+          type: array
+          description: List of line item objects.
+        orderUpdate.fulfillments[].lineItems[].id:
+          type: string
+          description: Line item identifier.
+        orderUpdate.fulfillments[].lineItems[].sku:
+          type: string
+          description: SKU of the line item.
+        orderUpdate.fulfillments[].lineItems[].title:
+          type: string
+          description: Title of the line item.
+        orderUpdate.fulfillments[].lineItems[].additionalFields:
+          type: array
+          description: Custom fields for the line item.
+        orderUpdate.fulfillments[].lineItems[].grams:
+          type: integer
+          description: Weight in grams.
+        orderUpdate.fulfillments[].lineItems[].price:
+          type: integer
+          description: Price amount.
+        orderUpdate.fulfillments[].lineItems[].shippingPrice:
+          type: integer
+          description: Shipping price amount.
+        orderUpdate.fulfillments[].lineItems[].shippingTax:
+          type: integer
+          description: Shipping tax amount.
+        orderUpdate.fulfillments[].lineItems[].quantity:
+          type: integer
+          description: Quantity of the line item.
+        orderUpdate.fulfillments[].lineItems[].shippingMethod:
+          type: string
+          description: Shipping method for the line item.
+        orderUpdate.fulfillments[].lineItems[].vendor:
+          type: string
+          description: Vendor name.
+      required:
+      - orderUpdate
+      - orderUpdate.fulfillments
+      - orderUpdate.fulfillments[].additionalFields[].name
+      - orderUpdate.fulfillments[].additionalFields[].value
+      - orderUpdate.fulfillments[].locationId
+      - orderUpdate.fulfillments[].status
+      - orderUpdate.fulfillments[].lineItems
+      - orderUpdate.fulfillments[].lineItems[].quantity
+    PostV1SuppliersSupplieridCallbacksResponse:
+      type: object
+      properties:
+        updateResult:
+          type: object
+          description: Result summary of the update operation.
+        updateResult.inventoryAdjustmentCount:
+          type: integer
+          description: Number of inventory adjustments performed.
+        updateResult.inventorySetCount:
+          type: integer
+          description: Number of inventory set operations performed.
+        updateResult.orderActivityCount:
+          type: integer
+          description: Number of order activities created.
+        updateResult.orderUpdateCount:
+          type: integer
+          description: Number of order updates applied.
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: apikey

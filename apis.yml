@@ -95,17 +95,18 @@ apis:
   humanURL: https://dev.channelape.com/docs/intro
   baseURL: null
   aid: channelape:channelape-api-2
-- aid: channelape:channelape-api
-  name: ChannelApe API
-  description: 'ChannelApe API as documented publicly: 8 operations. Contract generated from the documentation by API Evangelist (2026-10-08);
-
-    not the provider''s own document.'
-  humanURL: https://dev.channelape.com/docs/inventory/inventory-api
+- aid: channelape:channelape-0b2d6f2b-4676-40b4-9588-2a4c93f6b250-api
+  name: ChannelApe 0B2D6F2B 4676 40B4 9588 2A4C93F6B250 API
+  description: >-
+    The 0B2D6F2B 4676 40B4 9588 2A4C93F6B250 API from ChannelApe — 1 operation(s) for 0b2d6f2b 4676 40b4
+    9588 2a4c93f6b250.
+  humanURL: https://dev.channelape.com/docs/intro
   baseURL: https://api.channelape.io
+  tags:
+  - 0B2D6F2B 4676 40B4 9588 2A4C93F6B250
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/channelape-openapi-generated.yml
-    x-provenance: generated
+    url: openapi/channelape-0b2d6f2b-4676-40b4-9588-2a4c93f6b250-api-openapi.yml
   - type: JSONSchema
     url: json-schema/channelape-post-v1-suppliers-supplierid-callbacks-request-schema.json
   - type: JSONSchema
@@ -118,7 +119,120 @@ apis:
     url: json-schema/channelape-post-v1-suppliers-supplierid-callbacks-response-schema.json
   - type: JSONSchema
     url: json-schema/channelape-post-v1-inventory-item-quantity-adjustments-response-schema.json
-
+- aid: channelape:channelape-6f7402b4-e75c-4573-b3b4-3139dc1b733d-api
+  name: ChannelApe 6F7402B4 E75C 4573 B3B4 3139Dc1B733D API
+  description: >-
+    The 6F7402B4 E75C 4573 B3B4 3139Dc1B733D API from ChannelApe — 1 operation(s) for 6f7402b4 e75c 4573
+    b3b4 3139dc1b733d.
+  humanURL: https://dev.channelape.com/docs/intro
+  baseURL: https://api.channelape.io
+  tags:
+  - 6F7402B4 E75C 4573 B3B4 3139Dc1B733D
+  properties:
+  - type: OpenAPI
+    url: openapi/channelape-6f7402b4-e75c-4573-b3b4-3139dc1b733d-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/channelape-post-v1-suppliers-supplierid-callbacks-request-schema.json
+  - type: JSONSchema
+    url: json-schema/channelape-post0-b2-d6-f2-b467640-b495882-a4-c93-f6-b250-request-schema.json
+  - type: JSONSchema
+    url: json-schema/channelape-post6-f7402-b4-e75-c4573-b3-b43139-dc1-b733-drequest-schema.json
+  - type: JSONSchema
+    url: json-schema/channelape-get-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/channelape-post-v1-suppliers-supplierid-callbacks-response-schema.json
+  - type: JSONSchema
+    url: json-schema/channelape-post-v1-inventory-item-quantity-adjustments-response-schema.json
+- aid: channelape:channelape-channelape-api-api
+  name: ChannelApe ChannelApe API
+  description: The ChannelApe API API from ChannelApe — 1 operation(s) for channelape api.
+  humanURL: https://dev.channelape.com/docs/intro
+  baseURL: https://api.channelape.io
+  tags:
+  - ChannelApe API
+  properties:
+  - type: OpenAPI
+    url: openapi/channelape-channelape-api-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/channelape-post-v1-suppliers-supplierid-callbacks-request-schema.json
+  - type: JSONSchema
+    url: json-schema/channelape-post0-b2-d6-f2-b467640-b495882-a4-c93-f6-b250-request-schema.json
+  - type: JSONSchema
+    url: json-schema/channelape-post6-f7402-b4-e75-c4573-b3-b43139-dc1-b733-drequest-schema.json
+  - type: JSONSchema
+    url: json-schema/channelape-get-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/channelape-post-v1-suppliers-supplierid-callbacks-response-schema.json
+  - type: JSONSchema
+    url: json-schema/channelape-post-v1-inventory-item-quantity-adjustments-response-schema.json
+- aid: channelape:channelape-inventory-item-quantity-adjustments-api
+  name: ChannelApe Inventory Item Quantity Adjustments API
+  description: >-
+    The Inventory Item Quantity Adjustments API from ChannelApe — 1 operation(s) for inventory item quantity
+    adjustments.
+  humanURL: https://dev.channelape.com/docs/intro
+  baseURL: https://api.channelape.io
+  tags:
+  - Inventory Item Quantity Adjustments
+  properties:
+  - type: OpenAPI
+    url: openapi/channelape-inventory-item-quantity-adjustments-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/channelape-post-v1-suppliers-supplierid-callbacks-request-schema.json
+  - type: JSONSchema
+    url: json-schema/channelape-post0-b2-d6-f2-b467640-b495882-a4-c93-f6-b250-request-schema.json
+  - type: JSONSchema
+    url: json-schema/channelape-post6-f7402-b4-e75-c4573-b3-b43139-dc1-b733-drequest-schema.json
+  - type: JSONSchema
+    url: json-schema/channelape-get-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/channelape-post-v1-suppliers-supplierid-callbacks-response-schema.json
+  - type: JSONSchema
+    url: json-schema/channelape-post-v1-inventory-item-quantity-adjustments-response-schema.json
+- aid: channelape:channelape-rest-api
+  name: ChannelApe Rest API
+  description: The Rest API from ChannelApe — 2 operation(s) for rest.
+  humanURL: https://dev.channelape.com/docs/intro
+  baseURL: https://api.channelape.io
+  tags:
+  - Rest
+  properties:
+  - type: OpenAPI
+    url: openapi/channelape-rest-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/channelape-post-v1-suppliers-supplierid-callbacks-request-schema.json
+  - type: JSONSchema
+    url: json-schema/channelape-post0-b2-d6-f2-b467640-b495882-a4-c93-f6-b250-request-schema.json
+  - type: JSONSchema
+    url: json-schema/channelape-post6-f7402-b4-e75-c4573-b3-b43139-dc1-b733-drequest-schema.json
+  - type: JSONSchema
+    url: json-schema/channelape-get-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/channelape-post-v1-suppliers-supplierid-callbacks-response-schema.json
+  - type: JSONSchema
+    url: json-schema/channelape-post-v1-inventory-item-quantity-adjustments-response-schema.json
+- aid: channelape:channelape-suppliers-api
+  name: ChannelApe Suppliers API
+  description: The Suppliers API from ChannelApe — 1 operation(s) for suppliers.
+  humanURL: https://dev.channelape.com/docs/intro
+  baseURL: https://api.channelape.io
+  tags:
+  - Suppliers
+  properties:
+  - type: OpenAPI
+    url: openapi/channelape-suppliers-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/channelape-post-v1-suppliers-supplierid-callbacks-request-schema.json
+  - type: JSONSchema
+    url: json-schema/channelape-post0-b2-d6-f2-b467640-b495882-a4-c93-f6-b250-request-schema.json
+  - type: JSONSchema
+    url: json-schema/channelape-post6-f7402-b4-e75-c4573-b3-b43139-dc1-b733-drequest-schema.json
+  - type: JSONSchema
+    url: json-schema/channelape-get-v1-v1-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/channelape-post-v1-suppliers-supplierid-callbacks-response-schema.json
+  - type: JSONSchema
+    url: json-schema/channelape-post-v1-inventory-item-quantity-adjustments-response-schema.json
 x-coverage:
   state: unreadable
   reason: no-machine-readable-spec

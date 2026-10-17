@@ -1,0 +1,25 @@
+{
+  "provider": "channelape",
+  "sources": [
+    "_ae-authored/channelape-openapi-generated.yml"
+  ],
+  "outputs": [
+    "channelape-0b2d6f2b-4676-40b4-9588-2a4c93f6b250-api-openapi.yml",
+    "channelape-6f7402b4-e75c-4573-b3b4-3139dc1b733d-api-openapi.yml",
+    "channelape-channelape-api-api-openapi.yml",
+    "channelape-inventory-item-quantity-adjustments-api-openapi.yml",
+    "channelape-rest-api-openapi.yml",
+    "channelape-suppliers-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "channelape-openapi-generated.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "channelape-openapi-generated.yml: tagged paths GET /v1/{v1id} -> ChannelApe API",
+    "channelape-openapi-generated.yml: declared missing tag: ChannelApe API",
+    "apis.yml register: written (+6 apis, 7 total)"
+  ],
+  "skipped": []
+}
