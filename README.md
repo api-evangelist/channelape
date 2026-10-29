@@ -64,5 +64,121 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-ChannelApe is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+ChannelApe provides an inventory intelligence platform that helps operations teams manage wholesale, brick‑and‑mortar, dropship, and pre‑sale order workflows. The solution offers real‑time inventory visibility across multiple locations, automated fulfillment rules, and detailed analytics, eliminating spreadsheets and manual processes. It supports integrations via APIs for order management, inventory tracking, and partner coordination, enabling retailers and brands to scale efficiently.
+
+**Areas:** Inventory · Wholesale · Retail
+
+## ChannelApe on APIs.io
+
+Everything profiled for ChannelApe is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/channelape/](https://apis.io/providers/channelape/)** — or go straight to one of the APIs or properties below.
+
+### APIs (7)
+
+- [ChannelApe API](https://apis.io/apis/channelape/channelape-api-2/) — API for ChannelApe inventory intelligence platform
+- [ChannelApe 0B2D6F2B 4676 40B4 9588 2A4C93F6B250 API](https://apis.io/apis/channelape/channelape-0b2d6f2b-4676-40b4-9588-2a4c93f6b250-api/) — The 0B2D6F2B 4676 40B4 9588 2A4C93F6B250 API from ChannelApe — 1 operation(s) for 0b2d6f2b 4676 40b4 9588 2a4c93f6b250.
+- [ChannelApe 6F7402B4 E75C 4573 B3B4 3139Dc1B733D API](https://apis.io/apis/channelape/channelape-6f7402b4-e75c-4573-b3b4-3139dc1b733d-api/) — The 6F7402B4 E75C 4573 B3B4 3139Dc1B733D API from ChannelApe — 1 operation(s) for 6f7402b4 e75c 4573 b3b4 3139dc1b733d.
+- [ChannelApe ChannelApe API](https://apis.io/apis/channelape/channelape-channelape-api-api/) — The ChannelApe API API from ChannelApe — 1 operation(s) for channelape api.
+- [ChannelApe Inventory Item Quantity Adjustments API](https://apis.io/apis/channelape/channelape-inventory-item-quantity-adjustments-api/) — The Inventory Item Quantity Adjustments API from ChannelApe — 1 operation(s) for inventory item quantity adjustments.
+- [ChannelApe Rest API](https://apis.io/apis/channelape/channelape-rest-api/) — The Rest API from ChannelApe — 2 operation(s) for rest.
+- [ChannelApe Suppliers API](https://apis.io/apis/channelape/channelape-suppliers-api/) — The Suppliers API from ChannelApe — 1 operation(s) for suppliers.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### JSON Schema (6)
+
+The data models the API reads and writes.
+
+- [GetV1V1IdResponse](https://apis.io/schemas/channelape/channelape-get-v1-v1-id-response/)
+- [PostV1InventoryItemQuantityAdjustmentsResponse](https://apis.io/schemas/channelape/channelape-post-v1-inventory-item-quantity-adjustments-response/)
+- [PostV1SuppliersSupplieridCallbacksRequest](https://apis.io/schemas/channelape/channelape-post-v1-suppliers-supplierid-callbacks-request/)
+- [PostV1SuppliersSupplieridCallbacksResponse](https://apis.io/schemas/channelape/channelape-post-v1-suppliers-supplierid-callbacks-response/)
+- [Post0B2D6F2B467640B495882A4C93F6B250Request](https://apis.io/schemas/channelape/channelape-post0-b2-d6-f2-b467640-b495882-a4-c93-f6-b250-request/)
+- [Post6F7402B4E75C4573B3B43139Dc1B733DRequest](https://apis.io/schemas/channelape/channelape-post6-f7402-b4-e75-c4573-b3-b43139-dc1-b733-drequest/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Channelape Context](https://apis.io/jsonld/channelape/channelape-context/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [ChannelApe API Rules](https://apis.io/rules/channelape/channelape-rules/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Channelape Domain Security](https://apis.io/security/channelape/channelape-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.channelape.com)
+- [Documentation](https://dev.channelape.com/docs/intro)
+- [Getting started](https://dev.channelape.com/docs/intro)
+- [API reference](https://dev.channelape.com/api)
+- [Support](https://www.channelape.com/support-landing)
+- [Blog](https://www.channelape.com/blog)
+- [Terms of service](https://www.channelape.com/terms)
+- [Privacy policy](https://www.channelape.com/privacy)
+- [GitHub](https://github.com/ChannelApe)
+- [Status](https://channelape.statuspage.io)
+
+## API Evangelist rating
+
+**Kin Score 31.8** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 53.6 |
+| Contract quality | 26.2 |
+| Contract governance | 22.0 |
+| Operational transparency | 21.1 |
+| Developer ergonomics | 52.4 |
+| Access clarity | 21.1 |
+
+**Agent readiness 15.5** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 18.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/channelape/](https://apis.io/providers/channelape/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for ChannelApe: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/channelape/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
